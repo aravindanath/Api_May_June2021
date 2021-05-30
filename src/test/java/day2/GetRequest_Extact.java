@@ -16,9 +16,9 @@ public class GetRequest_Extact {
         RestAssured.basePath="/student/list";
 
        Response resp =  given().log().all().get();
-      String lastNamr = resp.then().extract().path("lastName").toString();
+       String lastNamr = resp.then().extract().path("lastName").toString();
 
-      System.out.println(lastNamr);
+       System.out.println(lastNamr);
        resp.prettyPrint();
     }
 }
