@@ -15,7 +15,7 @@ public class SchemaValidation {
     @Test
     public void getREQUEST(){
         RestAssured.baseURI ="http://localhost";
-        RestAssured.port =8888;
+        RestAssured.port =8080;
         RestAssured.basePath="/student/1";
 
         File schema = new File(System.getProperty("user.dir")+ File.separator+"StudentSchema.json");
