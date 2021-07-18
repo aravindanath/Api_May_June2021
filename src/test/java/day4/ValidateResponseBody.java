@@ -21,10 +21,10 @@ public class ValidateResponseBody {
 
         resp.prettyPrint();
         // Extraction
-       String name =  resp.then().extract().path("workspaces.name[0]").toString();
+        String name =  resp.then().extract().path("workspaces.name[0]").toString();
         String type =  resp.then().extract().path("workspaces.type[0]").toString();
         String id =  resp.then().extract().path("workspaces.id[0]").toString();
-       System.out.println("Name "+ name);
+        System.out.println("Name "+ name);
         System.out.println("Type "+ type);
         System.out.println("ID "+ id);
 
