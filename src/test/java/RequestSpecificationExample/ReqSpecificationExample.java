@@ -9,6 +9,7 @@ public class ReqSpecificationExample {
     // Interface
     RequestSpecification requestSpecification;
 
+
     @BeforeClass
     public void setupRequestSpecifications(){
 
@@ -17,7 +18,10 @@ public class ReqSpecificationExample {
                 .baseUri("https://restful-booker.herokuapp.com")
                 .basePath("/booking")
                 .header("dummy","adfadf")
-                .header("OAuth","Bearer");
+                .header("OAuth","Bearer")
+                .param("name","varu")
+                .cookie("dummy");
+
 
 
     }
